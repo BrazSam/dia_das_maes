@@ -25,5 +25,14 @@ texto = tk.Label(
 
 texto.pack(pady=20) # Posicionamento do rótulo na janela
 
+def resgatar_presente():
+    messagebox.showinfo('Resgatado!', 'Eu sabia que ' \
+                        'você preferia o meu abraço! ' \
+                            'Feliz Dia das Mães!') # Função para exibir uma mensagem de resgate do presente
+    
+btn_presente = tk.Button(janela, text="Lavo a louça " \
+                         "por uma semana", font=("Arial", 14), bg="#ff69b4", fg="white", command=resgatar_presente) # Criação de um botão para resgatar o presente
+
+btn_presente.pack(pady=20) # Posicionamento do botão na janela
 
 janela.mainloop()
